@@ -6,3 +6,28 @@
 @import "navigation.less";
 @import "footer.less";
 @import "home-page.less";
+
+@mobile: (max-width: 500px);
+
+.container.home {
+    @media @mobile {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+.content-pick, .destination {
+    @media @mobile{
+        flex-direction: column;
+        width: 94% !important;
+        margin-left: 5%;
+        }
+}
+
+header {
+    @media @mobile{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    }
+}

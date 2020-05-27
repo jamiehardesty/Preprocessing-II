@@ -196,8 +196,20 @@ nav {
   font-size: 1.5rem;
   margin-top: 4%;
 }
+@media (max-width: 500px) {
+  nav {
+    justify-content: space-between;
+    width: 95%;
+    padding-left: 5%;
+  }
+}
 h1 {
   margin-top: 3%;
+}
+@media (max-width: 500px) {
+  h1 {
+    text-align: center;
+  }
 }
 header nav a {
   text-decoration: none;
@@ -264,4 +276,25 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .container.home {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 500px) {
+  .content-pick,
+  .destination {
+    flex-direction: column;
+    width: 94% !important;
+    margin-left: 5%;
+  }
+}
+@media (max-width: 500px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
 }
