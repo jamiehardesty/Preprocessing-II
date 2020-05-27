@@ -1,1 +1,39 @@
 // Navigation Styles here
+@mobile: (max-width: 500px);
+
+header {
+    margin: 0;
+    padding-bottom: 2%;
+    border-bottom: 2px dashed silver;
+}
+header, nav {
+    display: flex;
+    justify-content: space-between;
+}
+nav {
+    width: 50%;
+    justify-content: space-evenly;
+    font-size: 1.5rem;
+    margin-top: 4%;
+    @media @mobile {
+        justify-content: space-between;
+        width: 95%;
+        padding-left: 5%;
+    }
+}
+h1 {
+    margin-top: 3%;
+    @media @mobile {
+        text-align: center;
+    }
+}
+header nav a {
+    text-decoration: none;
+    
+}
+img {
+    margin-bottom: 2%;
+}
+.headr {
+    border-bottom: 2px dashed silver;
+}
