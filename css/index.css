@@ -292,9 +292,18 @@ img {
   }
 }
 @media (max-width: 500px) {
-  header {
+  .text-content,
+  .content-section,
+  header,
+  .img-content,
+  .content-destination {
+    width: 100% !important;
     display: flex;
     flex-direction: column;
-    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .inverse-content {
+    flex-direction: column-reverse;
   }
 }

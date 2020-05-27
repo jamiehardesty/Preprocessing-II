@@ -24,10 +24,16 @@
         }
 }
 
-header {
+.text-content, .content-section, header, .img-content, .content-destination {
     @media @mobile{
+    width: 100% !important;
     display: flex;
     flex-direction: column;
-    width: 100%;
     }
+}
+
+.inverse-content {
+    @media @mobile{
+        flex-direction: column-reverse;
+        }
 }
