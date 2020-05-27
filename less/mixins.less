@@ -1,1 +1,19 @@
 // Mixins in here
+
+.mvp(@naka,@bgcolor){
+    text-align: @naka;
+    align-items: @naka;
+    justify-content:  @naka;
+    background-color: @bgcolor;
+}
+.btn{
+    border-radius: 12px;
+    font-size: 1.75rem;
+    color: white;
+    width: 90%;
+    height: 4rem;
+    display: flex;
+    .mvp(center, teal);
+}
+@naka: center;
+@bgcolor: teal;
